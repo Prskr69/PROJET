@@ -1,0 +1,36 @@
+.ouverture {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+}
+
+.ouverture h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color:white;
+}
+
+.btn {
+  background: orange;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 2rem;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff9800;
+  color: #fff;
+}

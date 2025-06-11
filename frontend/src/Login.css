@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css?family=Cairo:700&display=swap');
+
+.login-page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin-left: 50px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-sizing: border-box;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3fdf44;
+  width: 100%;
+  border: 0;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #43a047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #252424;
+  font-size: 16px;
+}
+.form .message a, .form .message span {
+  color: #4caf50;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form .register-form {
+  display: block;
+}
+body {
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.welcome-message {
+  text-align: left; /* Aligner le texte à gauche font-size: 19px; /* Taille du texte */
+  font-weight: 1000; /* Mettre le texte en gras */
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+
+  color: rgb(
+    255,
+    255,
+    255
+  ); /* Rouge foncé pour un contraste avec l'arrière-plan  */
+  margin-bottom: -50px; /* Un peu d'espace sous la phrase */
+  text-transform: uppercase; /* Mettre les lettres en majuscules */
+  letter-spacing: 4px; /* Ajouter un peu d'espace entre les lettres */
+  max-width: 700px; /* Limiter la largeur pour ne pas prendre toute la largeur de l'écran */
+  margin-left: 50px; /* Décaler un peu la phrase vers la gauche */
+  text-decoration: underline; /* Souligne le texte */
+
+  background-color: #e22b80;
+
+  padding: 4px 8px; /* Ajuste l'espace autour du texte */
+  display: inline-block; /*Fait que le fond ne dépasse pas le texte */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+    margin-left: -10%;
+    margin-right: 5%;
+    padding: 20px;
+  }
+  input,
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .welcome-message {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
